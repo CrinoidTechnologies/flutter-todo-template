@@ -4,8 +4,14 @@ import 'package:go_router/go_router.dart';
 
 import '../../screens/create_task_screen.dart';
 import '../../screens/home_screen.dart';
+import '../../screens/login_screen.dart';
 
 final appRoutes = [
+  GoRoute(
+    path: RouteLocation.login,
+    parentNavigatorKey: navigationKey,
+    builder: LoginScreen.builder,
+  ),
   GoRoute(
     path: RouteLocation.home,
     parentNavigatorKey: navigationKey,
